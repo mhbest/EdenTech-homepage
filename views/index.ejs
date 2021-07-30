@@ -1,0 +1,202 @@
+<% layout('layouts/boilerplate')%>
+
+<style>
+	.section {
+		height: 100%;
+		display: flex;
+		position: relative;
+		justify-content: center;
+		/* min-height: 100vh; */
+		width: 100vw;
+		/* overflow:auto; */
+	}
+
+	.img-thumbnail {
+		border: 0px;
+	}
+
+	.card {
+		overflow: hidden;
+		filter: brightness(100%);
+	}
+
+	.card-img-top:hover {
+		transform: scale(1.1);
+		overflow: hidden;
+		transition: 0.5s all ease-in-out;
+		filter: brightness(80%);
+	}
+
+	#section2 {
+		/* background-image: url('https://www.centralizedsolutions.com/wp-content/uploads/2021/01/partners.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.8; */
+		width: 100vw;
+	}
+</style>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div>
+			<div
+				style="
+					background-image: url(http://www.actsvalve.com/wp-content/uploads/2019/04/%EA%BE%B8%EB%AF%B8%EA%B8%B0%ED%99%88%ED%99%94%EB%A9%B4-e1557218969202.jpg);
+					width: 100vw;
+					height: 50vh;
+					background-size: cover;
+					background-repeat: no-repeat;
+				"
+				class="d-flex row align-items-center"
+			>
+				<h1 class="d-flex justify-content-center" style="color: white;">
+					<strong>EDENTECH</strong>
+				</h1>
+				<h2 class="d-flex justify-content-center" style="color: white;">
+					고객님을 위해 최선을 다하겠습니다
+				</h2>
+				<a
+					role="button"
+					href="/form"
+					class="btn btn-warning d-flex justify-content-center mx-auto"
+					style="width: 30%;"
+				>
+					제품문의 ></a
+				>
+			</div>
+
+			<div class="d-flex justify-content-center align-items-center" style="background-color:#FFC300; height:20vh; width:100vw; color:white;">
+				<h1 class="d-flex">
+					최고의 서비스를 제공하겠습니다.
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<div
+		class="section d-flex flex-column container-responsive"
+		id="section1"
+		style="background-color:#F2F4F4; padding-bottm: 10%;"
+	>
+		<h1
+			style="color: grey; font-family: 'Do Hyeon', sans-serif;"
+			class="d-flex justify-content-center mt-5"
+		>
+			이든테크를 선택하는 이유
+		</h1>
+		<div
+			class="row row-cols-1 row-cols-md-3 g-4 mx-5 d-flex justify-content-center align-item-start"
+			style="margin: 10% 10%;"
+		>
+			<div class="col" style="max-width: 80vw;">
+				<div
+					class="card"
+					data-aos="fade-up"
+					data-aos-duration="2000"
+					data-aos-once="true"
+					data-aos-offset="200"
+					data-aos-easing="ease-in-out"
+				>
+					<img
+						src="http://www.actsvalve.com/wp-content/uploads/2019/05/IMG_2489-400x266.jpg"
+						class="card-img-top"
+						style="max-height: 30vh;"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title text-center">Detail</h5>
+						<p class="card-text px-3 mt-3">
+							문의부터 출고, 사후관리까지 세심한 관리를 통한 품질경영을 최우선
+							원칙으로 삼고 있습니다
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col" style="max-width: 80vw;">
+				<div
+					class="card"
+					data-aos="fade-up"
+					data-aos-duration="2000"
+					data-aos-once="true"
+					data-aos-offset="200"
+					data-aos-easing="ease-in-out"
+				>
+					<img
+						src="http://www.actsvalve.com/wp-content/uploads/2019/05/IMG_2513-600x399.jpg"
+						class="card-img-top"
+						style="max-height: 30vh;"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title text-center">Best Service</h5>
+						<p class="card-text px-3 mt-3">
+							고객 만족팀 운영을 통한 체계화된 사후관리 시스템을 구축하고 있습니다.
+							고객 한 분 한 분의 소중한 의견을 겸허히 수용하며 잘못된 점을 개선,
+							보완해 나가고 있습니다.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col" style="max-width: 80vw;">
+				<div
+					class="card"
+					data-aos="fade-up"
+					data-aos-duration="2000"
+					data-aos-once="true"
+					data-aos-offset="200"
+					data-aos-easing="ease-in-out"
+				>
+					<img
+						src="http://www.actsvalve.com/wp-content/uploads/2019/08/nebeonjjae-600x400.png"
+						class="card-img-top"
+						style="max-height: 30vh;"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title text-center">Humanism</h5>
+						<p class="card-text px-3 mt-3">
+							이윤을 추구하는 기업이지만 사람과의 관계를 먼저 생각하겠습니다. 고객 한
+							분을 잃는 것이 가장 큰 손실임을 항상 생각하는 가슴 따뜻한 기업을 만들어
+							나가겠습니다.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section row d-flex" id="section2">
+		<h4 class="mt-5 text-center">
+			Recent Works with Partners
+		</h4>
+
+		<div class="justify-content-center container my-5">
+			<div
+				class="d-flex column container g-2 d-flex justify-content-center align-items-center" style="max-width:40vw;"
+			>
+				<img
+					src="https://archivenew.vop.co.kr/images/b6b8666694a2ddc4b46a78e0f8366e4b/2019-10/marked/28125509_image.jpg"
+					class="img-thumbnail mx-2 my-0"
+					style="max-width: 25vw;"
+				/>
+				<img
+					src="https://cdn.consumerpost.co.kr/news/photo/201704/131604_90864_438.png"
+					class="img-thumbnail mx-2 my-0"
+					style="max-width: 25vw;"
+				/>
+				<img
+					src="http://www.segicorp.kr/ko/setting/image/common/logo.png"
+					class="img-thumbnail mx-2 my-0"
+					style="max-width: 25vw;"
+				/>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- scroll effect용 script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>

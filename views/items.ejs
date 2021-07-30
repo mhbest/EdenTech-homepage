@@ -1,0 +1,161 @@
+<% layout('layouts/boilerplate')%>
+
+<style>
+	body {
+		font-family: sans-serif;
+		/* background-color:rgb(229, 228, 226,0.7); */
+
+	}
+	
+	
+
+	.scene {
+		width: 50%;
+		height: 70%;
+		/* border: 1px solid #ccc; */
+		margin-top:8%;
+		justify-content: center;
+		perspective: 800px;
+		border-radius:50%;
+	}
+
+	.card {
+		width: 100%;
+		height: 45%;
+		transition: transform 2s;
+		transform-style: preserve-3d;
+		cursor: pointer;
+		position: relative;
+		
+	}
+
+	.card:hover {
+		transform: rotateY(180deg);
+	}
+
+	.card.is-flipped {
+		transform: rotateY(180deg);
+		background-color:#FFC300;
+	}
+
+	.card__face {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		/* line-height: 260px; */
+		color: black;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.3rem;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	.card__face--front {
+		background-color: #D3D3D3;
+	}
+
+	.card__face--back {
+		background-color: #FFC300 ;
+		transform: rotateY(180deg);
+		font-size: 1rem;
+	}
+
+	.itemBox {
+		width: 80vw;
+		height: 60vh;
+		display: flex;
+		justify-content: center;
+		margin: 5%;
+		align-items: center;
+	}
+	
+	a{
+		text-decoration:none;
+		color:black;
+	}
+</style>
+
+<h1 class="d-flex justify-content-center my-5" style="color:black;">
+	What We serve
+</h1>
+
+<div class="container d-flex justify-content-center">
+	<div class="itemBox">
+		<div class="itemBox d-block">
+			<div class="scene scene--card d-inline">
+				<div class="card">
+					<div class="card__face card__face--front d-flex align-items-center justify-content-center">공압밸브</div>
+					<div class="card__face card__face--back">
+					<a class="d-block my-3 justify-content-center" href="items/product-1">불밸브</a>
+					<a class="d-block my-3 justify-content-center" href="items/product-1">버터플라이밸브</a>
+					<a class="d-block my-3 justify-content-center" href="items/product-1">PVC밸브</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="scene scene--card d-inline">
+				<div class="card mt-5">
+					<div class="card__face card__face--front d-flex align-items-center justify-content-center">전동밸브</div>
+					<div class="card__face card__face--back">
+					<a class="d-block my-3 justify-content-center" href="items/product-1">불밸브</a>
+					<a class="d-block my-3 justify-content-center" href="items/product-1">버터플라이밸브</a>
+					<a class="d-block my-3 justify-content-center" href="items/product-1">PVC밸브</a>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="itemBox d-block">
+			<div class="scene scene--card d-inline">
+				<div class="card">
+					<div class="card__face card__face--front d-flex align-items-center justify-content-center">수동밸브</div>
+					<div class="card__face card__face--back">
+					<a class="d-block my-3 justify-content-center" href="items/product-1">불밸브</a>
+					<a class="d-block my-3 justify-content-center" href="items/product-1">버터플라이밸브</a>
+					<a class="d-block my-3 justify-content-center" href="items/product-1">PVC밸브</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="scene scene--card d-inline">
+				<div class="card mt-5">
+					<div class="card__face card__face--front d-flex align-items-center justify-content-center">기타</div>
+					<div class="card__face card__face--back">
+					<a class="d-block my-3 justify-content-center" href="items/product-1">불밸브</a>
+					<a class="d-block my-3 justify-content-center" href="items/product-1">버터플라이밸브</a>
+					<a class="d-block my-3 justify-content-center" href="items/product-1">PVC밸브</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="scene scene--card d-inline">
+		<div class="card">
+			<div class="card__face card__face--front">front</div>
+			<div class="card__face card__face--back">back</div>
+		</div>
+	</div>
+
+	<div class="scene scene--card d-inline">
+		<div class="card">
+			<div class="card__face card__face--front">front</div>
+			<div class="card__face card__face--back">back</div>
+		</div>
+	</div>
+
+	<div class="scene scene--card d-inline">
+		<div class="card">
+			<div class="card__face card__face--front">front</div>
+			<div class="card__face card__face--back">back</div>
+		</div>
+	</div> -->
+	</div>
+</div>
+
+<script>
+	var card = document.querySelector('.card');
+	card.addEventListener('click', function () {
+		card.classList.toggle('is-flipped');
+	});
+</script>
