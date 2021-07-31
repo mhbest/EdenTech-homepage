@@ -31,13 +31,15 @@
 		
 		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
+	
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCHB3HDRYL"></script>
-<script>
+<script type='text/javascript' src="config.js">
+  var key = config.GOOGLE_ANALYTICS_ID;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-YCHB3HDRYL');
+  gtag('config', key);
 </script>
 	</head>
 	<body class="d-flex flex-column vh-100">
