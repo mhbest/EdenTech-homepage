@@ -1,0 +1,3 @@
+var config = {
+	GOOGLE_ANALYTICS_ID: 'G-YCHB3HDRYL'
+};
